@@ -73,7 +73,7 @@ void opcode0x8XY2() {
 }
 
 void opcode0x8XY3() {
-	registers[(operation & 0x0F00) >> 8] &= registers[(operation & 0x00F0) >> 4];
+	registers[(operation & 0x0F00) >> 8] ^= registers[(operation & 0x00F0) >> 4];
 	
 }
 
